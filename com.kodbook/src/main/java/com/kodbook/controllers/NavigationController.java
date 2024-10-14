@@ -18,9 +18,4 @@ public class NavigationController {
 	public String openCreatePost() {
 		return "createPost";
 	}
-	
-	@GetMapping("/openShowPosts")
-	public String openShowPosts() {
-		return "showPosts";
-	}
 }

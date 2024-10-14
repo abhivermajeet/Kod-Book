@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="ISO-8859-1">
 	<title>Posts</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
 		
 		<p><strong>Photo:</strong></p>
 		<img th:if="${post.photoBase64}" 
-		th:src="'data:image/jpeg;base64,'+${post.photoBase64}" 
+		th:src=" 'data:image/jpeg;base64, ' + ${post.photoBase64}" 
 		alt="Profile Photo" />
 		<p><strong>Caption:</strong>
 		<span th:text="${post.caption}"> </span></p>
